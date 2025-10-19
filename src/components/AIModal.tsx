@@ -26,7 +26,7 @@ export const AIModal = ({ open, onClose, onSuccess }: AIModalProps) => {
 
     try {
       // Call backend API instead of external AI API directly
-      const response = await fetch("http://localhost:3011/api/extract-and-search", {
+      const response = await fetch("https://autoquote-backend.onrender.com/api/extract-and-search", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
